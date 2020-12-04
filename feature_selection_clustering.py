@@ -52,6 +52,12 @@ col_names = [
 # Apply simple columns names
 data_feats.columns = col_names
 
+# Remove oceans and Antarctic Region
+data_feats = data_feats[
+    (data_feats['region'] != 'Antarctic Region') & 
+    (data_feats['region'] != 'Political Map of the World')
+]
+
 # Create final copy for export
 factbook_cluster = data_feats.copy()
 
