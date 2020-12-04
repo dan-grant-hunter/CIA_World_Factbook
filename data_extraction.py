@@ -4,7 +4,7 @@ from factbook_cols import relevant_factbook_cols as rfc
 import pandas as pd
 
 # Read in the data
-df = pd.read_json("data/factbook.json")
+df = pd.read_json("data/factbook_2020_11_30.json")
 
 # Check the index
 df.index
@@ -97,8 +97,8 @@ for col in cols_with_nested_dicts:
     df_filtered[col] = df_filtered[col].apply(extract_values)
 
 
-# Create copy for export
+# Create final copy for export
 df_final = df_filtered.copy()
 
 # Export to CSV
-df_final.to_csv('data/factbook_clean.csv')
+df_final.to_csv('data/factbook_clean.csv', index=False)
