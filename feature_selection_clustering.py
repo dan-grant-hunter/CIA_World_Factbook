@@ -58,6 +58,12 @@ data_feats = data_feats[
     (data_feats['region'] != 'Political Map of the World')
 ]
 
+# Remove punctuation from Europe
+data_feats.loc[data_feats['region'] == 'Europe;', 'region'] = 'Europe'
+
+# Reset index
+data_feats = data_feats.reset_index(drop=True)
+
 # Create final copy for export
 factbook_cluster = data_feats.copy()
 
