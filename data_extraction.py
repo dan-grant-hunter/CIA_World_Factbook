@@ -98,7 +98,7 @@ for col in cols_with_nested_dicts:
 
 
 # Create final copy for export
-df_final = df_filtered.copy()
+df_factbook = df_filtered.copy()
 
 # Export to CSV
-df_final.to_csv('data/factbook_clean.csv', index=False)
+df_factbook.to_csv('data/factbook_all.csv', index=False)
