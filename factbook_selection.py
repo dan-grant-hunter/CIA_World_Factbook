@@ -2,9 +2,9 @@
 import pandas as pd
 
 # Read in the data
-data = pd.read_csv("data/factbook_clean.csv")
+data = pd.read_csv("data/factbook_all.csv")
 
-# Features to use in clustering analysis
+# Features to use in analysis
 features = [
     'name',
     'geography.map_references',
@@ -25,7 +25,7 @@ features = [
     'population_below_poverty_line(%)',
 ]
 
-# New DataFrame with only selected features
+# New Dataframe with only selected features
 data_feats = data[features]
 
 # Column names simplified
@@ -65,7 +65,7 @@ data_feats.loc[data_feats['region'] == 'Europe;', 'region'] = 'Europe'
 data_feats = data_feats.reset_index(drop=True)
 
 # Create final copy for export
-factbook_cluster = data_feats.copy()
+factbook_selected = data_feats.copy()
 
 # Export to CSV
-factbook_cluster.to_csv('data/factbook_cluster.csv', index=False)
+factbook_selected.to_csv('data/factbook_selected.csv', index=False)
