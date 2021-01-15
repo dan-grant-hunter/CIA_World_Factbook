@@ -4,7 +4,7 @@
 
 The global divide between rich and poor countries gets wider every year. While some countries enjoy extraordinary wealth, other countries get left behind. A common way to try and reduce this inequality is for NGOs to supply aid to countries which are struggling in key areas such as health, wellbeing, income and other key socioeconomic measures. One problem, however, is that it can be difficult to identify which countries to prioritise. In this analysis, I take the most recent data from the CIA World Factbook and use clustering to identify which countries are most in need of aid.
 
-[Click here to view the notebook in nbviewer](https://nbviewer.jupyter.org/github/dan-grant-hunter/CIA_World_Factbook/blob/main/cia_world_factbook_clustering_analysis.ipynb)
+[**Click here to view the notebook in nbviewer**](https://nbviewer.jupyter.org/github/dan-grant-hunter/CIA_World_Factbook/blob/main/cia_world_factbook_clustering_analysis.ipynb)
 
 ## Results from Clustering
 
