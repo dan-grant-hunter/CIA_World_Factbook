@@ -49,7 +49,7 @@ col_names = [
     'pop_below_poverty',    
 ]
 
-# Apply simple columns names
+# Apply simple column names
 data_feats.columns = col_names
 
 # Remove oceans and Antarctic Region
